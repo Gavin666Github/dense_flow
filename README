@@ -1,0 +1,19 @@
+This is a sample code for extrating dense flow field given a video.
+
+Usage:
+./denseFlow_gpu -f test.avi -x tmp/flow_x -y tmp/flow_x -i tmp/image -b 20 -t 1 -d 0 -s 1
+test.avi: input video
+tmp: folder containing RGB images and optical flow images
+
+# Example
+mkdir /home/gavin/Dataset/flow
+./denseFlow -f ex.avi -x /home/gavin/Dataset/flow/x -y /home/gavin/Dataset/flow/y -i /home/gavin/Dataset/flow/i -b 20 -t 1 -d 0 -s 1 -h 0 -w 0
+
+ex.avi is the input video
+flow/ is the folder containing the extracted RGB frames and optical flows
+
+./denseFlow_gpu -f test.avi -x tmp/flow_x -y tmp/flow_x -i tmp/image -b 20 -t 1 -d 0 -s 1
+
+
+./denseFlow -f /home/gavin/Downloads/UCF-101/ApplyEyeMakeup/v_ApplyEyeMakeup_g01_c01.avi -x /home/gavin/Dataset/UCF-101_Flow/ApplyEyeMakeup/v_ApplyEyeMakeup_g01_c01/x -y /home/gavin/Dataset/UCF-101_Flow/ApplyEyeMakeup/v_ApplyEyeMakeup_g01_c01/y -i /home/gavin/Dataset/UCF-101_Flow/ApplyEyeMakeup/v_ApplyEyeMakeup_g01_c01/i -b 20 -t 1 -d 0 -s 1 -h 0 -w 0
+

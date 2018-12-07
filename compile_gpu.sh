@@ -1,0 +1,1 @@
+g++ denseFlow.cpp -L /usr/local/lib/ -o denseFlow  `pkg-config --cflags --libs opencv`
